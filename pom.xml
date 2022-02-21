@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.labzen</groupId>
+  <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
@@ -52,7 +52,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <organization.name>Labzen</organization.name>
-    <organization.url>http://www.labzen.xyz</organization.url>
+    <organization.url>http://labzen.cn</organization.url>
 
     <kotlin.version>1.6.10</kotlin.version>
 
