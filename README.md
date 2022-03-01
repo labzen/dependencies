@@ -4,7 +4,7 @@
 
 ![Labzen Dependencies](https://img.shields.io/badge/Labzen-Dependencies-green)
 
-![GitHub](https://img.shields.io/github/license/labzen/labzen-dependencies)
+![GitHub](https://img.shields.io/github/license/labzen/dependencies)
 
 Labzen Dependencies 为所有项目提供依赖版本定义
 
@@ -16,7 +16,7 @@ Install with Maven
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.labzen</groupId>
+        <groupId>cn.labzen</groupId>
         <artifactId>dependencies</artifactId>
         <version>{{the latest version}}</version>
         <type>pom</type>
@@ -27,4 +27,4 @@ Install with Maven
 ```
 ## Documentation
 
-依赖管理会在`org.labzen:parent`中被引入，除非不选择基于`org.labzen:parent`作父Maven POM来创建项目，否则不需要理会`Installation`
+依赖管理会在`cn.labzen:parent`中被引入，除非不选择基于`cn.labzen:parent`作父Maven POM来创建项目，否则不需要理会`Installation`
