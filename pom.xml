@@ -6,7 +6,7 @@
   <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
-  <version>1.1</version>
+  <version>1.2-SNAPSHOT</version>
   <name>${organization.name}.Dependencies</name>
   <description>Labzen Dependencies</description>
   <url>https://github.com/labzen/dependencies</url>
@@ -53,7 +53,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <organization.name>Labzen</organization.name>
     <organization.url>http://labzen.cn</organization.url>
-    <gpg.keyname>57FDF51E96802BD7</gpg.keyname>
 
     <kotlin.version>1.6.10</kotlin.version>
 
