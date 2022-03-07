@@ -34,7 +34,6 @@
     <url>https://github.com/labzen/dependencies</url>
     <connection>scm:git:ssh://git@github.com:labzen/dependencies.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:labzen/dependencies.git</developerConnection>
-    <tag>V${project.version}</tag>
   </scm>
 
   <distributionManagement>
