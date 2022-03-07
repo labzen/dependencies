@@ -740,6 +740,7 @@
             <version>2.5.3</version>
             <configuration>
               <tagNameFormat>V${version}</tagNameFormat>
+              <branchName>main</branchName>
             </configuration>
           </plugin>
           <plugin>
