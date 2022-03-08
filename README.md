@@ -3,8 +3,11 @@
 # Labzen Dependencies
 
 ![Labzen Dependencies](https://img.shields.io/badge/Labzen-Dependencies-green)
-
+![Maven Central](https://img.shields.io/maven-central/v/cn.labzen/dependencies)
 ![GitHub](https://img.shields.io/github/license/labzen/dependencies)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/labzen/dependencies)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/labzen/dependencies)
 
 Labzen Dependencies 为所有项目提供依赖版本定义
 
