@@ -61,7 +61,7 @@
     <bom.spring.cloud>Hoxton.SR9</bom.spring.cloud>
     <bom.spring.cloud.alibaba>2.2.3.RELEASE</bom.spring.cloud.alibaba>
     <bom.spring.data>2020.0.1</bom.spring.data>
-    <bom.spring.security>5.4.4</bom.spring.security>
+    <bom.spring.security>5.4.8</bom.spring.security>
     <bom.spring.session>2020.0.1</bom.spring.session>
     <bom.spring.statemachine>2.2.1.RELEASE</bom.spring.statemachine>
     <!-- it's NOT going to be imported -->
@@ -84,7 +84,7 @@
     <flatlaf.version>1.6</flatlaf.version>
     <jsr305.version>3.0.2</jsr305.version>
     <guava.version>30.0-jre</guava.version>
-    <jackson.version>2.10.5.1</jackson.version>
+    <jackson.version>2.13.1</jackson.version>
     <lombok.version>1.18.4</lombok.version>
     <cglib.version>3.3.0</cglib.version>
     <jna.version>5.5.0</jna.version>
@@ -93,9 +93,9 @@
     <redisson.version>3.16.0</redisson.version>
     <jaxb.version>2.3.1</jaxb.version>
     <!--官方建议使用最新的8版本驱动，提供更好的兼容性-->
-    <mysql.version>8.0.16</mysql.version>
+    <mysql.version>8.0.27</mysql.version>
     <postgresql.version>42.3.3</postgresql.version>
-    <sqlite.version>3.32.3.2</sqlite.version>
+    <sqlite.version>3.36.0.3</sqlite.version>
     <h2.version>2.1.210</h2.version>
     <kotlin-logging.version>1.4.9</kotlin-logging.version>
 
@@ -107,7 +107,7 @@
     <bouncycastle.version>1.70</bouncycastle.version>
     <protobuf.version>3.17.2</protobuf.version>
     <grpc.version>1.39.0</grpc.version>
-    <netty.version>4.1.42</netty.version>
+    <netty.version>4.1.74.Final</netty.version>
     <okhttp3.version>3.14.0</okhttp3.version>
     <okhttp.digest.version>1.17</okhttp.digest.version>
     <retrofit.version>2.9.0</retrofit.version>
