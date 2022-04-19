@@ -80,7 +80,7 @@
 
     <javafx.version>17.0.0.1</javafx.version>
     <javafx.controlsfx.version>11.1.0</javafx.controlsfx.version>
-    <javafx.animationfx.version>1.2.2</javafx.animationfx.version>
+    <javafx.animationfx.version>1.2.1</javafx.animationfx.version>
     <flatlaf.version>1.6</flatlaf.version>
     <jsr305.version>3.0.2</jsr305.version>
     <guava.version>30.0-jre</guava.version>
