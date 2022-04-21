@@ -78,10 +78,6 @@
     <mockito.version>3.1.0</mockito.version>
     <jmh.version>1.22</jmh.version>
 
-    <javafx.version>17.0.0.1</javafx.version>
-    <javafx.controlsfx.version>11.1.0</javafx.controlsfx.version>
-    <javafx.animationfx.version>1.2.1</javafx.animationfx.version>
-    <flatlaf.version>1.6</flatlaf.version>
     <jsr305.version>3.0.2</jsr305.version>
     <guava.version>30.0-jre</guava.version>
     <jackson.version>2.13.1</jackson.version>
@@ -242,79 +238,6 @@
             <artifactId>jul-to-slf4j</artifactId>
           </exclusion>
         </exclusions>
-      </dependency>
-      <!--//////////////////////////////////////////////////////////////////-->
-
-      <!-- about GUI -->
-      <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-controls</artifactId>
-        <version>${javafx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-media</artifactId>
-        <version>${javafx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-graphics</artifactId>
-        <version>${javafx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-fxml</artifactId>
-        <version>${javafx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-swing</artifactId>
-        <version>${javafx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-web</artifactId>
-        <version>${javafx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-plugin</artifactId>
-        <version>${javafx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.controlsfx</groupId>
-        <artifactId>controlsfx</artifactId>
-        <version>${javafx.controlsfx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.github.typhon0</groupId>
-        <artifactId>AnimateFX</artifactId>
-        <version>${javafx.animationfx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.formdev</groupId>
-        <artifactId>flatlaf</artifactId>
-        <version>${flatlaf.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.formdev</groupId>
-        <artifactId>flatlaf-extras</artifactId>
-        <version>${flatlaf.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.formdev</groupId>
-        <artifactId>flatlaf-swingx</artifactId>
-        <version>${flatlaf.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.formdev</groupId>
-        <artifactId>flatlaf-intellij-themes</artifactId>
-        <version>${flatlaf.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.formdev</groupId>
-        <artifactId>flatlaf-jide-oss</artifactId>
-        <version>${flatlaf.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
