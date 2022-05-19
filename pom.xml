@@ -52,7 +52,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <organization.name>Labzen</organization.name>
-    <organization.url>http://labzen.cn</organization.url>
+    <organization.url>https://labzen.cn</organization.url>
 
     <kotlin.version>1.6.10</kotlin.version>
 
