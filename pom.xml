@@ -113,6 +113,7 @@
     <druid.version>1.2.8</druid.version>
     <mybatis-plus.version>3.4.1</mybatis-plus.version>
     <mybatis-page-helper.version>5.1.8</mybatis-page-helper.version>
+    <mybatis-page-helper-starter.version>1.2.10</mybatis-page-helper-starter.version>
     <user-agent-utils.version>1.21</user-agent-utils.version>
     <poi.version>4.0.1</poi.version>
     <xstream.version>1.4.19</xstream.version>
@@ -568,9 +569,24 @@
         <version>${mybatis-plus.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+        <version>${mybatis-plus.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-generator</artifactId>
+        <version>${mybatis-plus.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.github.pagehelper</groupId>
         <artifactId>pagehelper</artifactId>
         <version>${mybatis-page-helper.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper-spring-boot-starter</artifactId>
+        <version>${mybatis-page-helper-starter.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
