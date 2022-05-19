@@ -83,7 +83,7 @@
     <jackson.version>2.13.1</jackson.version>
     <lombok.version>1.18.4</lombok.version>
     <cglib.version>3.3.0</cglib.version>
-    <jna.version>5.5.0</jna.version>
+    <jna.version>5.10.0</jna.version>
     <javacv.version>1.5.6</javacv.version>
     <caffeine.version>2.8.0</caffeine.version>
     <redisson.version>3.16.0</redisson.version>
