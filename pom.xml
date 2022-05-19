@@ -121,6 +121,7 @@
     <reflections.version>0.9.11</reflections.version>
     <jjwt.version>0.11.1</jjwt.version>
     <mapstruct.version>1.4.2.Final</mapstruct.version>
+    <jsoup.version>1.9.2</jsoup.version>
     <maven.invoker.version>3.0.1</maven.invoker.version>
     <maven.model.version>3.6.3</maven.model.version>
   </properties>
@@ -524,6 +525,11 @@
         <groupId>org.mapstruct</groupId>
         <artifactId>mapstruct-processor</artifactId>
         <version>${mapstruct.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jsoup</groupId>
+        <artifactId>jsoup</artifactId>
+        <version>${jsoup.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
