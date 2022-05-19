@@ -124,6 +124,7 @@
     <jsoup.version>1.9.2</jsoup.version>
     <maven.invoker.version>3.0.1</maven.invoker.version>
     <maven.model.version>3.6.3</maven.model.version>
+    <activiti.version>6.0.0</activiti.version>
   </properties>
 
   <dependencyManagement>
@@ -650,6 +651,19 @@
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-model</artifactId>
         <version>${maven.model.version}</version>
+      </dependency>
+      <!--//////////////////////////////////////////////////////////////////-->
+
+      <!-- about activiti -->
+      <dependency>
+        <groupId>org.activiti</groupId>
+        <artifactId>activiti-spring-boot-starter-basic</artifactId>
+        <version>${activiti.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.activiti</groupId>
+        <artifactId>activiti-json-converter</artifactId>
+        <version>${activiti.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
