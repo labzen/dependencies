@@ -88,6 +88,7 @@
     <javacv.version>1.5.6</javacv.version>
     <caffeine.version>2.8.0</caffeine.version>
     <redisson.version>3.16.0</redisson.version>
+    <ehcache.version>2.5.0</ehcache.version>
     <jaxb.version>2.3.1</jaxb.version>
     <!--官方建议使用最新的8版本驱动，提供更好的兼容性-->
     <mysql.version>8.0.27</mysql.version>
@@ -112,6 +113,7 @@
     <retrofit.version>2.9.0</retrofit.version>
     <usb.version>1.3.0</usb.version>
     <ahc.version>2.8.0</ahc.version>
+    <shiro.version>1.5.2</shiro.version>
     <druid.version>1.2.8</druid.version>
     <mybatis-plus.version>3.4.1</mybatis-plus.version>
     <mybatis-page-helper.version>5.1.8</mybatis-page-helper.version>
@@ -469,6 +471,11 @@
         <version>${redisson.version}</version>
       </dependency>
       <dependency>
+        <artifactId>ehcache-core</artifactId>
+        <groupId>net.sf.ehcache</groupId>
+        <version>${ehcache.version}</version>
+      </dependency>
+      <dependency>
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
         <version>${jaxb.version}</version>
@@ -570,6 +577,26 @@
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
         <version>${h2.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-core</artifactId>
+        <version>${shiro.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-web</artifactId>
+        <version>1.3.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-spring</artifactId>
+        <version>${shiro.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-aspectj</artifactId>
+        <version>${shiro.version}</version>
       </dependency>
       <dependency>
         <groupId>com.alibaba</groupId>
