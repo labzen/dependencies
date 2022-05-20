@@ -382,11 +382,6 @@
         <artifactId>bctls-jdk15on</artifactId>
         <version>${bouncycastle.version}</version>
       </dependency>
-      <dependency>
-        <groupId>org.bouncycastle</groupId>
-        <artifactId>bctest-jdk15on</artifactId>
-        <version>${bouncycastle.version}</version>
-      </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
       <!-- about utils -->
