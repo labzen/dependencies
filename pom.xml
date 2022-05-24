@@ -49,55 +49,77 @@
     </repository>
   </distributionManagement>
 
+  <repositories>
+    <repository>
+      <id>aliyun-public</id>
+      <url>https://maven.aliyun.com/repository/public</url>
+    </repository>
+    <repository>
+      <id>aliyun-central</id>
+      <url>https://maven.aliyun.com/repository/central</url>
+    </repository>
+    <repository>
+      <id>aliyun-spring</id>
+      <url>https://maven.aliyun.com/repository/spring</url>
+    </repository>
+    <repository>
+      <id>activiti-releases</id>
+      <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases</url>
+    </repository>
+  </repositories>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <organization.name>Labzen</organization.name>
     <organization.url>https://labzen.cn</organization.url>
 
-    <kotlin.version>1.6.10</kotlin.version>
+    <kotlin.version>1.6.21</kotlin.version>
 
     <!--IO.Platform将会进入EOL，使用spring-boot-dependencies作为最新的BOM引入-->
-    <bom.spring.boot>2.2.12.RELEASE</bom.spring.boot>
-    <bom.spring.cloud>Hoxton.SR9</bom.spring.cloud>
-    <bom.spring.cloud.alibaba>2.2.3.RELEASE</bom.spring.cloud.alibaba>
-    <bom.spring.data>2020.0.1</bom.spring.data>
-    <bom.spring.security>5.4.8</bom.spring.security>
-    <bom.spring.session>2020.0.1</bom.spring.session>
-    <bom.spring.statemachine>2.2.1.RELEASE</bom.spring.statemachine>
+    <bom.spring.boot>2.6.7</bom.spring.boot>
+    <bom.spring.cloud>2021.0.2</bom.spring.cloud>
+    <bom.spring.cloud.alibaba>2021.1</bom.spring.cloud.alibaba>
+    <bom.spring.data>2021.1.4</bom.spring.data>
+    <bom.spring.security>5.6.3</bom.spring.security>
+    <bom.spring.session>2021.1.3</bom.spring.session>
+    <bom.spring.statemachine>3.1.0</bom.spring.statemachine>
     <!-- it's NOT going to be imported -->
     <bom.spring.vault>2.3.1</bom.spring.vault>
+    <bom.netty>4.1.76.Final</bom.netty>
+    <bom.activiti>7.1.0-M16</bom.activiti>
 
     <spring.shell.version>2.0.1.RELEASE</spring.shell.version>
     <slf4j.version>1.7.36</slf4j.version>
     <slf4j2.version>2.0.0-alpha6</slf4j2.version>
     <logback.version>1.2.10</logback.version>
     <logback2.version>1.3.0-alpha13</logback2.version>
-    <log4j2.version>2.17.1</log4j2.version>
-    <jupiter.version>5.5.2</jupiter.version>
+    <log4j2.version>2.17.2</log4j2.version>
+    <jupiter.version>5.9.0-M1</jupiter.version>
     <hamcrest.version>2.2</hamcrest.version>
-    <mockito.version>3.1.0</mockito.version>
-    <jmh.version>1.22</jmh.version>
+    <mockito.version>4.5.1</mockito.version>
+    <jmh.version>1.35</jmh.version>
 
     <jsr305.version>3.0.2</jsr305.version>
-    <guava.version>30.0-jre</guava.version>
-    <jackson.version>2.13.1</jackson.version>
-    <lombok.version>1.18.4</lombok.version>
+    <guava.version>31.1-jre</guava.version>
+    <jackson.version>2.13.3</jackson.version>
+    <lombok.version>1.18.24</lombok.version>
     <cglib.version>3.3.0</cglib.version>
     <jna.version>5.10.0</jna.version>
     <oshi.version>6.1.6</oshi.version>
-    <javacv.version>1.5.6</javacv.version>
-    <caffeine.version>2.8.0</caffeine.version>
-    <redisson.version>3.16.0</redisson.version>
-    <ehcache.version>2.5.0</ehcache.version>
-    <jaxb.version>2.3.1</jaxb.version>
+    <javacv.version>1.5.7</javacv.version>
+    <caffeine.version>3.1.0</caffeine.version>
+    <redisson.version>3.17.1</redisson.version>
+    <ehcache.version>2.10.9.2</ehcache.version>
+    <jaxb.api.version>2.4.0-b180830.0359</jaxb.api.version>
+    <jaxb.runtime.version>3.0.2</jaxb.runtime.version>
     <!--官方建议使用最新的8版本驱动，提供更好的兼容性-->
-    <mysql.version>8.0.27</mysql.version>
-    <postgresql.version>42.3.3</postgresql.version>
+    <mysql.version>8.0.29</mysql.version>
+    <postgresql.version>42.3.4</postgresql.version>
     <sqlite.version>3.36.0.3</sqlite.version>
-    <h2.version>2.1.210</h2.version>
-    <kotlin-logging.version>1.4.9</kotlin-logging.version>
+    <h2.version>2.1.212</h2.version>
+    <kotlin-logging.version>2.1.21</kotlin-logging.version>
 
-    <commons.io.version>2.5</commons.io.version>
+    <commons.io.version>2.11.0</commons.io.version>
     <commons.fileupload.version>1.4</commons.fileupload.version>
     <commons.compress.version>1.21</commons.compress.version>
     <commons.crypto.version>1.1.0</commons.crypto.version>
@@ -105,38 +127,37 @@
     <commons.net.version>3.8.0</commons.net.version>
 
     <bouncycastle.version>1.70</bouncycastle.version>
-    <protobuf.version>3.17.2</protobuf.version>
-    <grpc.version>1.39.0</grpc.version>
+    <protobuf.version>3.20.1</protobuf.version>
+    <grpc.version>1.46.0</grpc.version>
     <netty.version>4.1.74.Final</netty.version>
-    <okhttp3.version>3.14.0</okhttp3.version>
-    <okhttp.digest.version>1.17</okhttp.digest.version>
+    <okhttp3.version>4.9.3</okhttp3.version>
+    <okhttp.digest.version>2.1</okhttp.digest.version>
     <retrofit.version>2.9.0</retrofit.version>
     <usb.version>1.3.0</usb.version>
-    <ahc.version>2.8.0</ahc.version>
-    <shiro.version>1.5.2</shiro.version>
-    <druid.version>1.2.8</druid.version>
-    <mybatis-plus.version>3.4.1</mybatis-plus.version>
-    <mybatis-page-helper.version>5.1.8</mybatis-page-helper.version>
-    <mybatis-page-helper-starter.version>1.2.10</mybatis-page-helper-starter.version>
+    <ahc.version>2.12.3</ahc.version>
+    <shiro.version>1.9.0</shiro.version>
+    <druid.version>1.2.9</druid.version>
+    <mybatis-plus.version>3.5.1</mybatis-plus.version>
+    <mybatis-page-helper.version>5.3.0</mybatis-page-helper.version>
+    <mybatis-page-helper-starter.version>1.4.2</mybatis-page-helper-starter.version>
     <user-agent-utils.version>1.21</user-agent-utils.version>
-    <poi.version>4.0.1</poi.version>
+    <poi.version>5.2.2</poi.version>
     <xstream.version>1.4.19</xstream.version>
     <kxml2.version>2.3.0</kxml2.version>
-    <reflections.version>0.9.11</reflections.version>
-    <jjwt.version>0.11.1</jjwt.version>
-    <mapstruct.version>1.4.2.Final</mapstruct.version>
-    <jsoup.version>1.9.2</jsoup.version>
+    <reflections.version>0.10.2</reflections.version>
+    <jjwt.version>0.11.5</jjwt.version>
+    <mapstruct.version>1.5.0.RC1</mapstruct.version>
+    <jsoup.version>1.15.1</jsoup.version>
     <springfox.version>3.0.0</springfox.version>
-    <maven.invoker.version>3.0.1</maven.invoker.version>
-    <maven.model.version>3.6.3</maven.model.version>
-    <activiti.version>6.0.0</activiti.version>
+    <maven.invoker.version>3.2.0</maven.invoker.version>
+    <maven.model.version>3.8.5</maven.model.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
       <!-- Spring Boot IO Platform Bom Import -->
       <dependency>
-        <!--Dec, 2020-->
+        <!--Apr, 2022-->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
         <version>${bom.spring.boot}</version>
@@ -145,7 +166,7 @@
       </dependency>
       <!-- Spring Cloud Bom Import -->
       <dependency>
-        <!--Nov, 2020-->
+        <!--Apr, 2022-->
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
         <version>${bom.spring.cloud}</version>
@@ -154,7 +175,7 @@
       </dependency>
       <!-- Alibaba Could Bom Import -->
       <dependency>
-        <!--Sep, 2020-->
+        <!--Apr, 2021-->
         <groupId>com.alibaba.cloud</groupId>
         <artifactId>spring-cloud-alibaba-dependencies</artifactId>
         <version>${bom.spring.cloud.alibaba}</version>
@@ -163,7 +184,7 @@
       </dependency>
       <!-- Spring Data Bom Import -->
       <dependency>
-        <!--Nov, 2020-->
+        <!--Apr, 2022-->
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-bom</artifactId>
         <version>${bom.spring.data}</version>
@@ -172,7 +193,7 @@
       </dependency>
       <!-- Spring Security Bom Import -->
       <dependency>
-        <!--Dec, 2020-->
+        <!--Apr, 2022-->
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-bom</artifactId>
         <version>${bom.spring.security}</version>
@@ -181,7 +202,7 @@
       </dependency>
       <!-- Spring Session Bom Import -->
       <dependency>
-        <!--Nov, 2020-->
+        <!--Apr, 2022-->
         <groupId>org.springframework.session</groupId>
         <artifactId>spring-session-bom</artifactId>
         <version>${bom.spring.session}</version>
@@ -190,12 +211,29 @@
       </dependency>
       <!-- Spring State Machine Bom Import -->
       <dependency>
-        <!-- Nov, 2020 -->
+        <!-- Apr, 2022 -->
         <groupId>org.springframework.statemachine</groupId>
         <artifactId>spring-statemachine-bom</artifactId>
         <version>${bom.spring.statemachine}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <!-- Netty Bom Import -->
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-bom</artifactId>
+        <version>${netty.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!-- Activiti Bom Import -->
+      <!-- need repository activiti-releases -->
+      <dependency>
+        <groupId>org.activiti</groupId>
+        <artifactId>activiti-dependencies</artifactId>
+        <version>${bom.activiti}</version>
+        <scope>import</scope>
+        <type>pom</type>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
@@ -309,11 +347,11 @@
         <artifactId>grpc-stub</artifactId>
         <version>${grpc.version}</version>
       </dependency>
-      <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-all</artifactId>
-        <version>${netty.version}</version>
-      </dependency>
+      <!--      <dependency>-->
+      <!--        <groupId>io.netty</groupId>-->
+      <!--        <artifactId>netty-all</artifactId>-->
+      <!--        <version>${netty.version}</version>-->
+      <!--      </dependency>-->
       <dependency>
         <groupId>org.asynchttpclient</groupId>
         <artifactId>async-http-client</artifactId>
@@ -466,19 +504,19 @@
         <version>${redisson.version}</version>
       </dependency>
       <dependency>
-        <artifactId>ehcache-core</artifactId>
         <groupId>net.sf.ehcache</groupId>
+        <artifactId>ehcache</artifactId>
         <version>${ehcache.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
-        <version>${jaxb.version}</version>
+        <version>${jaxb.api.version}</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-runtime</artifactId>
-        <version>${jaxb.version}</version>
+        <version>${jaxb.runtime.version}</version>
       </dependency>
       <dependency>
         <groupId>eu.bitwalker</groupId>
@@ -581,7 +619,7 @@
       <dependency>
         <groupId>org.apache.shiro</groupId>
         <artifactId>shiro-web</artifactId>
-        <version>1.3.2</version>
+        <version>${shiro.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.shiro</groupId>
@@ -591,6 +629,11 @@
       <dependency>
         <groupId>org.apache.shiro</groupId>
         <artifactId>shiro-aspectj</artifactId>
+        <version>${shiro.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-ehcache</artifactId>
         <version>${shiro.version}</version>
       </dependency>
       <dependency>
@@ -689,19 +732,6 @@
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-model</artifactId>
         <version>${maven.model.version}</version>
-      </dependency>
-      <!--//////////////////////////////////////////////////////////////////-->
-
-      <!-- about activiti -->
-      <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-spring-boot-starter-basic</artifactId>
-        <version>${activiti.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-json-converter</artifactId>
-        <version>${activiti.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
