@@ -6,6 +6,8 @@
 ![Maven Central](https://img.shields.io/maven-central/v/cn.labzen/dependencies)
 ![GitHub](https://img.shields.io/github/license/labzen/dependencies)
 
+![CircleCI](https://img.shields.io/circleci/build/github/labzen/dependencies?token=8953c094c11cf9c1d5ac53befed4eb49b770f4f0)
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/labzen/dependencies)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/labzen/dependencies)
 
