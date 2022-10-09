@@ -49,25 +49,6 @@
     </repository>
   </distributionManagement>
 
-  <repositories>
-    <repository>
-      <id>aliyun-public</id>
-      <url>https://maven.aliyun.com/repository/public</url>
-    </repository>
-    <repository>
-      <id>aliyun-central</id>
-      <url>https://maven.aliyun.com/repository/central</url>
-    </repository>
-    <repository>
-      <id>aliyun-spring</id>
-      <url>https://maven.aliyun.com/repository/spring</url>
-    </repository>
-    <repository>
-      <id>activiti-releases</id>
-      <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases</url>
-    </repository>
-  </repositories>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <organization.name>Labzen</organization.name>
@@ -775,6 +756,41 @@
   </dependencyManagement>
 
   <profiles>
+    <profile>
+      <id>snapshot</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+
+      <repositories>
+        <repository>
+          <id>aliyun-public</id>
+          <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+        <repository>
+          <id>aliyun-central</id>
+          <url>https://maven.aliyun.com/repository/central</url>
+        </repository>
+        <repository>
+          <id>aliyun-spring</id>
+          <url>https://maven.aliyun.com/repository/spring</url>
+        </repository>
+        <repository>
+          <id>activiti-releases</id>
+          <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases</url>
+        </repository>
+        <repository>
+          <id>sonatype-snapshots</id>
+          <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
     <profile>
       <id>release</id>
 
