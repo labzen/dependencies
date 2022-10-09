@@ -83,6 +83,7 @@
     <jsr305.version>3.0.2</jsr305.version>
     <guava.version>31.1-jre</guava.version>
     <jackson.version>2.13.3</jackson.version>
+    <snakeyaml.version>1.32</snakeyaml.version>
     <lombok.version>1.18.24</lombok.version>
     <cglib.version>3.3.0</cglib.version>
     <jna.version>5.10.0</jna.version>
@@ -453,6 +454,11 @@
         <groupId>com.fasterxml.jackson.module</groupId>
         <artifactId>jackson-module-kotlin</artifactId>
         <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        <version>${snakeyaml.version}</version>
       </dependency>
       <dependency>
         <groupId>org.projectlombok</groupId>
