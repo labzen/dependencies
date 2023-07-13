@@ -99,7 +99,6 @@
     <postgresql.version>42.3.4</postgresql.version>
     <sqlite.version>3.36.0.3</sqlite.version>
     <h2.version>2.1.212</h2.version>
-    <kotlin-logging.version>2.1.21</kotlin-logging.version>
 
     <commons.lang3.version>3.12.0</commons.lang3.version>
     <commons.io.version>2.11.0</commons.io.version>
@@ -593,11 +592,6 @@
         <groupId>org.javassist</groupId>
         <artifactId>javassist</artifactId>
         <version>${javassist.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.github.microutils</groupId>
-        <artifactId>kotlin-logging</artifactId>
-        <version>${kotlin-logging.version}</version>
       </dependency>
       <dependency>
         <groupId>io.jsonwebtoken</groupId>
