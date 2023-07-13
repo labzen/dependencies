@@ -6,8 +6,8 @@
   <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
-  <version>1.8-SNAPSHOT</version>
-  <name>${organization.name}.Dependencies</name>
+  <version>1.8</version>
+  <name>Labzen.Dependencies</name>
   <description>Labzen Dependencies</description>
   <url>https://github.com/labzen/dependencies</url>
 
@@ -19,8 +19,8 @@
   </licenses>
 
   <organization>
-    <name>${organization.name}</name>
-    <url>${organization.url}</url>
+    <name>Labzen</name>
+    <url>https://labzen.cn</url>
   </organization>
 
   <developers>
