@@ -80,8 +80,8 @@
     <jmh.version>1.35</jmh.version>
 
     <jsr305.version>3.0.2</jsr305.version>
-    <guava.version>31.1-jre</guava.version>
-    <jackson.version>2.13.3</jackson.version>
+    <guava.version>32.1.1-jre</guava.version>
+    <jackson.version>2.13.5</jackson.version>
     <fastjson.version>2.0.12</fastjson.version>
     <snakeyaml.version>1.32</snakeyaml.version>
     <lombok.version>1.18.24</lombok.version>
@@ -96,46 +96,46 @@
     <jaxb.runtime.version>3.0.2</jaxb.runtime.version>
     <!--官方建议使用最新的8版本驱动，提供更好的兼容性-->
     <mysql.version>8.0.29</mysql.version>
-    <postgresql.version>42.3.4</postgresql.version>
-    <sqlite.version>3.36.0.3</sqlite.version>
-    <h2.version>2.1.212</h2.version>
+    <postgresql.version>42.5.4</postgresql.version>
+    <sqlite.version>3.41.2.2</sqlite.version>
+    <h2.version>2.2.220</h2.version>
 
     <commons.lang3.version>3.12.0</commons.lang3.version>
     <commons.io.version>2.11.0</commons.io.version>
-    <commons.fileupload.version>1.4</commons.fileupload.version>
+    <commons.fileupload.version>1.5</commons.fileupload.version>
     <commons.compress.version>1.21</commons.compress.version>
     <commons.crypto.version>1.1.0</commons.crypto.version>
     <commons.email.version>1.5</commons.email.version>
-    <commons.net.version>3.8.0</commons.net.version>
+    <commons.net.version>3.9.0</commons.net.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
 
-    <server.jetty.version>11.0.12</server.jetty.version>
-    <server.undertow.version>2.3.0.Final</server.undertow.version>
+    <server.jetty.version>11.0.15</server.jetty.version>
+    <server.undertow.version>2.3.7.Final</server.undertow.version>
     <server.tomcat.version>9.0.68</server.tomcat.version>
 
     <bouncycastle.version>1.70</bouncycastle.version>
-    <protobuf.version>3.20.1</protobuf.version>
-    <grpc.version>1.46.0</grpc.version>
+    <protobuf.version>3.21.12</protobuf.version>
+    <grpc.version>1.53.0</grpc.version>
     <netty.version>4.1.74.Final</netty.version>
     <okhttp3.version>4.9.3</okhttp3.version>
     <okhttp.digest.version>2.1</okhttp.digest.version>
     <retrofit.version>2.9.0</retrofit.version>
     <usb.version>1.3.0</usb.version>
     <ahc.version>2.12.3</ahc.version>
-    <shiro.version>1.9.0</shiro.version>
+    <shiro.version>1.11.0</shiro.version>
     <druid.version>1.2.9</druid.version>
     <mybatis-plus.version>3.5.1</mybatis-plus.version>
-    <mybatis-page-helper.version>5.3.0</mybatis-page-helper.version>
+    <mybatis-page-helper.version>5.3.3</mybatis-page-helper.version>
     <mybatis-page-helper-starter.version>1.4.2</mybatis-page-helper-starter.version>
     <user-agent-utils.version>1.21</user-agent-utils.version>
     <poi.version>5.2.2</poi.version>
-    <xstream.version>1.4.19</xstream.version>
+    <xstream.version>1.4.20</xstream.version>
     <kxml2.version>2.3.0</kxml2.version>
     <reflections.version>0.10.2</reflections.version>
     <javassist.version>3.28.0-GA</javassist.version>
     <jjwt.version>0.11.5</jjwt.version>
     <mapstruct.version>1.5.0.RC1</mapstruct.version>
-    <jsoup.version>1.15.1</jsoup.version>
+    <jsoup.version>1.15.4</jsoup.version>
     <springfox.version>3.0.0</springfox.version>
     <maven.invoker.version>3.2.0</maven.invoker.version>
     <maven.model.version>3.8.5</maven.model.version>
@@ -722,6 +722,7 @@
         <artifactId>pagehelper-spring-boot-starter</artifactId>
         <version>${mybatis-page-helper-starter.version}</version>
       </dependency>
+
       <!--//////////////////////////////////////////////////////////////////-->
 
       <!-- about log -->
