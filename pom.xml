@@ -57,12 +57,19 @@
     <kotlin.version>1.7.0</kotlin.version>
 
     <!--IO.Platform将会进入EOL，使用spring-boot-dependencies作为最新的BOM引入-->
-    <bom.spring.boot>2.6.7</bom.spring.boot>
-    <bom.spring.cloud>2021.0.2</bom.spring.cloud>
-    <bom.spring.cloud.alibaba>2021.1</bom.spring.cloud.alibaba>
-    <bom.spring.data>2021.1.4</bom.spring.data>
-    <bom.spring.security>5.6.3</bom.spring.security>
+    <!--May 18, 2023-->
+    <bom.spring.boot>2.6.15</bom.spring.boot>
+    <!--Jun 29, 2023-->
+    <bom.spring.cloud>2021.0.8</bom.spring.cloud>
+    <!--Jul 26, 2023-->
+    <bom.spring.cloud.alibaba>2022.0.0.0</bom.spring.cloud.alibaba>
+    <!--Nov 18, 2022-->
+    <bom.spring.data>2021.1.10</bom.spring.data>
+    <!--Jul 18, 2023-->
+    <bom.spring.security>5.6.12</bom.spring.security>
+    <!--Apr 20, 2022-->
     <bom.spring.session>2021.1.3</bom.spring.session>
+    <!-- Apr 06, 2022 -->
     <bom.spring.statemachine>3.1.0</bom.spring.statemachine>
     <!-- it's NOT going to be imported -->
     <bom.spring.vault>2.3.1</bom.spring.vault>
@@ -70,10 +77,9 @@
     <bom.activiti>7.1.0-M16</bom.activiti>
 
     <spring.shell.version>2.0.1.RELEASE</spring.shell.version>
-    <slf4j.version>2.0.7</slf4j.version>
-    <logback.version>1.4.8</logback.version>
+    <slf4j.version>2.0.9</slf4j.version>
+    <logback.version>1.4.14</logback.version>
     <reload4j.version>1.2.25</reload4j.version>
-    <log4j2.version>2.20.0</log4j2.version>
     <jupiter.version>5.9.0-M1</jupiter.version>
     <hamcrest.version>2.2</hamcrest.version>
     <mockito.version>4.5.1</mockito.version>
@@ -111,12 +117,12 @@
 
     <server.jetty.version>11.0.15</server.jetty.version>
     <server.undertow.version>2.3.7.Final</server.undertow.version>
-    <server.tomcat.version>9.0.68</server.tomcat.version>
+    <server.tomcat.version>9.0.84</server.tomcat.version>
 
     <bouncycastle.version>1.70</bouncycastle.version>
     <protobuf.version>3.21.12</protobuf.version>
     <grpc.version>1.53.0</grpc.version>
-    <netty.version>4.1.74.Final</netty.version>
+    <netty.version>4.1.103.Final</netty.version>
     <okhttp3.version>4.9.3</okhttp3.version>
     <okhttp.digest.version>2.1</okhttp.digest.version>
     <retrofit.version>2.9.0</retrofit.version>
@@ -124,7 +130,7 @@
     <ahc.version>2.12.3</ahc.version>
     <shiro.version>1.11.0</shiro.version>
     <druid.version>1.2.9</druid.version>
-    <mybatis-plus.version>3.5.1</mybatis-plus.version>
+    <mybatis-plus.version>3.5.4.1</mybatis-plus.version>
     <mybatis-page-helper.version>5.3.3</mybatis-page-helper.version>
     <mybatis-page-helper-starter.version>1.4.2</mybatis-page-helper-starter.version>
     <user-agent-utils.version>1.21</user-agent-utils.version>
@@ -145,7 +151,6 @@
     <dependencies>
       <!-- Spring Boot IO Platform Bom Import -->
       <dependency>
-        <!--Apr, 2022-->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
         <version>${bom.spring.boot}</version>
@@ -154,7 +159,6 @@
       </dependency>
       <!-- Spring Cloud Bom Import -->
       <dependency>
-        <!--Apr, 2022-->
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
         <version>${bom.spring.cloud}</version>
@@ -163,7 +167,6 @@
       </dependency>
       <!-- Alibaba Could Bom Import -->
       <dependency>
-        <!--Apr, 2021-->
         <groupId>com.alibaba.cloud</groupId>
         <artifactId>spring-cloud-alibaba-dependencies</artifactId>
         <version>${bom.spring.cloud.alibaba}</version>
@@ -172,7 +175,6 @@
       </dependency>
       <!-- Spring Data Bom Import -->
       <dependency>
-        <!--Apr, 2022-->
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-bom</artifactId>
         <version>${bom.spring.data}</version>
@@ -181,7 +183,6 @@
       </dependency>
       <!-- Spring Security Bom Import -->
       <dependency>
-        <!--Apr, 2022-->
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-bom</artifactId>
         <version>${bom.spring.security}</version>
@@ -190,7 +191,6 @@
       </dependency>
       <!-- Spring Session Bom Import -->
       <dependency>
-        <!--Apr, 2022-->
         <groupId>org.springframework.session</groupId>
         <artifactId>spring-session-bom</artifactId>
         <version>${bom.spring.session}</version>
@@ -199,7 +199,6 @@
       </dependency>
       <!-- Spring State Machine Bom Import -->
       <dependency>
-        <!-- Apr, 2022 -->
         <groupId>org.springframework.statemachine</groupId>
         <artifactId>spring-statemachine-bom</artifactId>
         <version>${bom.spring.statemachine}</version>
@@ -334,6 +333,16 @@
         <groupId>io.undertow</groupId>
         <artifactId>undertow-core</artifactId>
         <version>${server.undertow.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-websocket</artifactId>
+        <version>${server.tomcat.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-el</artifactId>
+        <version>${server.tomcat.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
@@ -550,6 +559,11 @@
         <version>${redisson.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.redisson</groupId>
+        <artifactId>redisson-spring-boot-starter</artifactId>
+        <version>${redisson.version}</version>
+      </dependency>
+      <dependency>
         <groupId>net.sf.ehcache</groupId>
         <artifactId>ehcache</artifactId>
         <version>${ehcache.version}</version>
@@ -761,21 +775,6 @@
         <groupId>ch.qos.reload4j</groupId>
         <artifactId>reload4j</artifactId>
         <version>${reload4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-slf4j-impl</artifactId>
-        <version>${log4j2.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-api</artifactId>
-        <version>${log4j2.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-        <version>${log4j2.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
