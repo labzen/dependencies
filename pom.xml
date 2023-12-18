@@ -87,13 +87,13 @@
 
     <jsr305.version>3.0.2</jsr305.version>
     <guava.version>32.1.1-jre</guava.version>
-    <jackson.version>2.13.5</jackson.version>
+    <jackson.version>2.15.3</jackson.version>
     <fastjson.version>2.0.12</fastjson.version>
-    <snakeyaml.version>1.32</snakeyaml.version>
+    <snakeyaml.version>2.2</snakeyaml.version>
     <lombok.version>1.18.24</lombok.version>
     <cglib.version>3.3.0</cglib.version>
-    <jna.version>5.10.0</jna.version>
-    <oshi.version>6.1.6</oshi.version>
+    <jna.version>5.14.0</jna.version>
+    <oshi.version>6.4.9</oshi.version>
     <javacv.version>1.5.7</javacv.version>
     <caffeine.version>3.1.0</caffeine.version>
     <redisson.version>3.17.1</redisson.version>
@@ -130,9 +130,12 @@
     <ahc.version>2.12.3</ahc.version>
     <shiro.version>1.11.0</shiro.version>
     <druid.version>1.2.9</druid.version>
+    <mybatis.version>3.5.15</mybatis.version>
+    <mybatis-spring.version>2.1.2</mybatis-spring.version>
     <mybatis-plus.version>3.5.4.1</mybatis-plus.version>
+    <mybatis-plus-join.version>1.4.8.1</mybatis-plus-join.version>
     <mybatis-page-helper.version>5.3.3</mybatis-page-helper.version>
-    <mybatis-page-helper-starter.version>1.4.2</mybatis-page-helper-starter.version>
+    <mybatis-page-helper-starter.version>1.4.7</mybatis-page-helper-starter.version>
     <user-agent-utils.version>1.21</user-agent-utils.version>
     <poi.version>5.2.2</poi.version>
     <xstream.version>1.4.20</xstream.version>
@@ -707,6 +710,16 @@
         <version>${druid.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis</artifactId>
+        <version>${mybatis.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis-spring</artifactId>
+        <version>${mybatis-spring.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.baomidou</groupId>
         <artifactId>mybatis-plus</artifactId>
         <version>${mybatis-plus.version}</version>
@@ -725,6 +738,11 @@
         <groupId>com.baomidou</groupId>
         <artifactId>mybatis-plus-generator</artifactId>
         <version>${mybatis-plus.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.yulichang</groupId>
+        <artifactId>mybatis-plus-join-boot-starter</artifactId>
+        <version>${mybatis-plus-join.version}</version>
       </dependency>
       <dependency>
         <groupId>com.github.pagehelper</groupId>
