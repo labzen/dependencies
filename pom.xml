@@ -132,7 +132,8 @@
     <druid.version>1.2.9</druid.version>
     <mybatis.version>3.5.15</mybatis.version>
     <mybatis-spring.version>2.1.2</mybatis-spring.version>
-    <mybatis-plus.version>3.5.4.1</mybatis-plus.version>
+    <mybatis-plus.version>3.5.5</mybatis-plus.version>
+    <mybatis-plus-dynamic.version>4.3.0</mybatis-plus-dynamic.version>
     <mybatis-plus-join.version>1.4.8.1</mybatis-plus-join.version>
     <mybatis-page-helper.version>5.3.3</mybatis-page-helper.version>
     <mybatis-page-helper-starter.version>1.4.7</mybatis-page-helper-starter.version>
@@ -732,7 +733,7 @@
       <dependency>
         <groupId>com.baomidou</groupId>
         <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
-        <version>${mybatis-plus.version}</version>
+        <version>${mybatis-plus-dynamic.version}</version>
       </dependency>
       <dependency>
         <groupId>com.baomidou</groupId>
