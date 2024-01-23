@@ -54,7 +54,7 @@
     <organization.name>Labzen</organization.name>
     <organization.url>https://labzen.cn</organization.url>
 
-    <kotlin.version>1.7.0</kotlin.version>
+    <kotlin.version>1.9.10</kotlin.version>
 
     <!--IO.Platform将会进入EOL，使用spring-boot-dependencies作为最新的BOM引入-->
     <!--May 18, 2023-->
