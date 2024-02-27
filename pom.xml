@@ -147,6 +147,8 @@
     <mapstruct.version>1.5.0.RC1</mapstruct.version>
     <jsoup.version>1.15.4</jsoup.version>
     <springfox.version>3.0.0</springfox.version>
+    <!-- 这是最后一个基于1.8jdk版本的 -->
+    <t-io.version>3.7.5.v20211028-RELEASE</t-io.version>
     <maven.invoker.version>3.2.0</maven.invoker.version>
     <maven.model.version>3.8.5</maven.model.version>
   </properties>
@@ -651,6 +653,21 @@
         <groupId>io.springfox</groupId>
         <artifactId>springfox-boot-starter</artifactId>
         <version>${springfox.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.t-io</groupId>
+        <artifactId>tio-core</artifactId>
+        <version>${t-io.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.t-io</groupId>
+        <artifactId>tio-http-server</artifactId>
+        <version>${t-io.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.t-io</groupId>
+        <artifactId>tio-websocket-server</artifactId>
+        <version>${t-io.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
