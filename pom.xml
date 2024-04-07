@@ -94,7 +94,7 @@
     <cglib.version>3.3.0</cglib.version>
     <jna.version>5.14.0</jna.version>
     <oshi.version>6.4.9</oshi.version>
-    <javacv.version>1.5.7</javacv.version>
+    <javacv.version>1.5.10</javacv.version>
     <caffeine.version>3.1.0</caffeine.version>
     <redisson.version>3.17.1</redisson.version>
     <ehcache.version>2.10.9.2</ehcache.version>
