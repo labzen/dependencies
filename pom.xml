@@ -132,11 +132,13 @@
     <druid.version>1.2.9</druid.version>
     <mybatis.version>3.5.15</mybatis.version>
     <mybatis-spring.version>2.1.2</mybatis-spring.version>
+    <mybatis-flex.version>1.8.9</mybatis-flex.version>
     <mybatis-plus.version>3.5.5</mybatis-plus.version>
     <mybatis-plus-dynamic.version>4.3.0</mybatis-plus-dynamic.version>
     <mybatis-plus-join.version>1.4.8.1</mybatis-plus-join.version>
     <mybatis-page-helper.version>5.3.3</mybatis-page-helper.version>
     <mybatis-page-helper-starter.version>1.4.7</mybatis-page-helper-starter.version>
+    <p6spy.version>3.9.1</p6spy.version>
     <user-agent-utils.version>1.21</user-agent-utils.version>
     <poi.version>5.2.2</poi.version>
     <xstream.version>1.4.20</xstream.version>
@@ -728,6 +730,11 @@
         <version>${druid.version}</version>
       </dependency>
       <dependency>
+        <groupId>p6spy</groupId>
+        <artifactId>p6spy</artifactId>
+        <version>${p6spy.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis</artifactId>
         <version>${mybatis.version}</version>
@@ -736,6 +743,11 @@
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis-spring</artifactId>
         <version>${mybatis-spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.mybatis-flex</groupId>
+        <artifactId>mybatis-flex-spring-boot-starter</artifactId>
+        <version>${mybatis-flex.version}</version>
       </dependency>
       <dependency>
         <groupId>com.baomidou</groupId>
