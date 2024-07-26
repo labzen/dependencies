@@ -146,7 +146,7 @@
     <reflections.version>0.10.2</reflections.version>
     <javassist.version>3.28.0-GA</javassist.version>
     <jjwt.version>0.11.5</jjwt.version>
-    <mapstruct.version>1.5.0.RC1</mapstruct.version>
+    <mapstruct.version>1.5.5.Final</mapstruct.version>
     <jsoup.version>1.15.4</jsoup.version>
     <springfox.version>3.0.0</springfox.version>
     <!-- 这是最后一个基于1.8jdk版本的 -->
