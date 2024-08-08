@@ -67,10 +67,6 @@
     <slf4j.version>2.0.13</slf4j.version>
     <logback.version>1.5.6</logback.version>
     <reload4j.version>1.2.25</reload4j.version>
-    <jupiter.version>5.9.0-M1</jupiter.version>
-    <hamcrest.version>2.2</hamcrest.version>
-    <mockito.version>4.5.1</mockito.version>
-    <jmh.version>1.35</jmh.version>
 
     <jsr305.version>3.0.2</jsr305.version>
     <guava.version>32.1.1-jre</guava.version>
@@ -825,28 +821,6 @@
         <version>${maven.model.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
-
-      <!-- about test -->
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>${jupiter.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest</artifactId>
-        <version>${hamcrest.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>${mockito.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.openjdk.jmh</groupId>
-        <artifactId>jmh-generator-annprocess</artifactId>
-        <version>${jmh.version}</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
