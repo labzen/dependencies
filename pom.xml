@@ -6,7 +6,7 @@
   <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
-  <version>1.9.1</version>
+  <version>1.9.2</version>
   <name>Labzen.Dependencies</name>
   <description>Labzen Dependencies</description>
   <url>https://github.com/labzen/dependencies</url>
@@ -40,8 +40,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <organization.name>Labzen</organization.name>
-    <organization.url>https://labzen.cn</organization.url>
 
     <kotlin.version>1.9.10</kotlin.version>
 
@@ -854,6 +852,13 @@
 
   <repositories>
     <repository>
+      <id>central</id>
+      <url>https://repo1.maven.org/maven2</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+    <repository>
       <id>aliyun-public</id>
       <url>https://maven.aliyun.com/repository/public</url>
     </repository>
@@ -870,6 +875,15 @@
       <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases</url>
     </repository>
   </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <url>https://repo1.maven.org/maven2</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
 
   <build>
     <plugins>
@@ -894,6 +908,7 @@
         <extensions>true</extensions>
         <configuration>
           <publishingServerId>central</publishingServerId>
+          <autoPublish>true</autoPublish>
         </configuration>
       </plugin>
     </plugins>
