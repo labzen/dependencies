@@ -6,7 +6,7 @@
   <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
-  <version>1.9.2</version>
+  <version>1.9.3</version>
   <name>Labzen.Dependencies</name>
   <description>Labzen Dependencies</description>
   <url>https://github.com/labzen/dependencies</url>
@@ -130,6 +130,7 @@
     <javassist.version>3.28.0-GA</javassist.version>
     <jjwt.version>0.11.5</jjwt.version>
     <mapstruct.version>1.5.5.Final</mapstruct.version>
+    <mapstruct.projectlombok.version>0.2.0</mapstruct.projectlombok.version>
     <jsoup.version>1.15.4</jsoup.version>
     <springfox.version>3.0.0</springfox.version>
     <!-- 这是最后一个基于1.8jdk版本的 -->
@@ -628,6 +629,11 @@
         <groupId>org.mapstruct</groupId>
         <artifactId>mapstruct-processor</artifactId>
         <version>${mapstruct.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok-mapstruct-binding</artifactId>
+        <version>${mapstruct.projectlombok.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jsoup</groupId>
