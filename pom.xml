@@ -6,7 +6,7 @@
   <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
-  <version>1.9.3</version>
+  <version>1.10.0</version>
   <name>Labzen.Dependencies</name>
   <description>Labzen Dependencies</description>
   <url>https://github.com/labzen/dependencies</url>
@@ -44,99 +44,106 @@
     <kotlin.version>1.9.10</kotlin.version>
 
     <!--IO.Platform将会进入EOL，使用spring-boot-dependencies作为最新的BOM引入-->
-    <!--May 18, 2023-->
-    <bom.spring.boot>2.6.15</bom.spring.boot>
-    <!--Jun 29, 2023-->
-    <bom.spring.cloud>2021.0.8</bom.spring.cloud>
-    <!--Jul 26, 2023-->
-    <bom.spring.cloud.alibaba>2022.0.0.0</bom.spring.cloud.alibaba>
-    <!--Nov 18, 2022-->
-    <bom.spring.data>2021.1.10</bom.spring.data>
-    <!--Jul 18, 2023-->
-    <bom.spring.security>5.6.12</bom.spring.security>
-    <!--Apr 20, 2022-->
-    <bom.spring.session>2021.1.3</bom.spring.session>
-    <!-- Apr 06, 2022 -->
-    <bom.spring.statemachine>3.1.0</bom.spring.statemachine>
+    <!--Nov 23, 2023-->
+    <bom.spring.boot>2.7.18</bom.spring.boot>
+    <!--Dec 06, 2023-->
+    <bom.spring.cloud>2023.0.0</bom.spring.cloud>
+    <!--Dec 04, 2024-->
+    <bom.spring.cloud.alibaba>2022.0.0.2</bom.spring.cloud.alibaba>
+    <!--Jan 12, 2024-->
+    <bom.spring.data>2023.1.2</bom.spring.data>
+    <!--Feb 16, 2024-->
+    <bom.spring.security>6.1.7</bom.spring.security>
+    <!--Oct 17, 2023-->
+    <bom.spring.session>2021.2.3</bom.spring.session>
+    <!--Dec 04, 2023-->
+    <bom.spring.statemachine>4.0.0</bom.spring.statemachine>
     <!-- it's NOT going to be imported -->
     <bom.spring.vault>2.3.1</bom.spring.vault>
-    <bom.netty>4.1.76.Final</bom.netty>
+    <bom.netty>4.1.121.Final</bom.netty>
     <bom.activiti>7.1.0-M16</bom.activiti>
 
-    <spring.shell.version>2.0.1.RELEASE</spring.shell.version>
-    <slf4j.version>2.0.13</slf4j.version>
-    <logback.version>1.5.6</logback.version>
-    <reload4j.version>1.2.25</reload4j.version>
+    <spring.shell.version>2.1.15</spring.shell.version>
+    <slf4j.version>2.0.17</slf4j.version>
+    <logback.version>1.5.18</logback.version>
+    <reload4j.version>1.2.26</reload4j.version>
 
     <jsr305.version>3.0.2</jsr305.version>
-    <guava.version>32.1.1-jre</guava.version>
-    <jackson.version>2.15.3</jackson.version>
-    <fastjson.version>2.0.12</fastjson.version>
-    <snakeyaml.version>2.2</snakeyaml.version>
-    <lombok.version>1.18.24</lombok.version>
+    <spotbugs-annotations.version>4.8.6</spotbugs-annotations.version>
+    <guava.version>33.4.0-jre</guava.version>
+    <jackson.version>2.18.4</jackson.version>
+    <fastjson.version>2.0.53</fastjson.version>
+    <fastjson2.version>2.0.53</fastjson2.version>
+    <snakeyaml.version>2.0.53</snakeyaml.version>
+    <lombok.version>1.18.34</lombok.version>
     <cglib.version>3.3.0</cglib.version>
-    <jna.version>5.14.0</jna.version>
-    <oshi.version>6.4.9</oshi.version>
-    <javacv.version>1.5.10</javacv.version>
-    <caffeine.version>3.1.0</caffeine.version>
-    <redisson.version>3.17.1</redisson.version>
-    <ehcache.version>2.10.9.2</ehcache.version>
-    <jaxb.api.version>2.4.0-b180830.0359</jaxb.api.version>
-    <jaxb.runtime.version>3.0.2</jaxb.runtime.version>
+    <jna.version>5.16.0</jna.version>
+    <oshi.version>6.6.6</oshi.version>
+    <javacv.version>1.5.11</javacv.version>
+    <caffeine.version>3.1.8</caffeine.version>
+    <redisson.version>3.38.1</redisson.version>
+    <ehcache.old.version>2.10.9.2</ehcache.old.version>
+    <ehcache.version>3.10.8</ehcache.version>
+    <jaxb.api.old.version>2.4.0-b180830.0359</jaxb.api.old.version>
+    <jaxb.api.version>4.0.2</jaxb.api.version>
+    <jaxb.runtime.version>4.0.5</jaxb.runtime.version>
     <!--官方建议使用最新的8版本驱动，提供更好的兼容性-->
-    <mysql.version>8.0.29</mysql.version>
-    <postgresql.version>42.5.4</postgresql.version>
-    <sqlite.version>3.41.2.2</sqlite.version>
-    <h2.version>2.2.220</h2.version>
+    <mysql.old.version>8.0.29</mysql.old.version>
+    <mysql.version>8.4.0</mysql.version>
+    <postgresql.version>42.6.2</postgresql.version>
+    <sqlite.version>3.46.1.3</sqlite.version>
+    <h2.version>2.3.232</h2.version>
 
-    <commons.lang3.version>3.12.0</commons.lang3.version>
-    <commons.io.version>2.11.0</commons.io.version>
+    <commons.lang3.version>3.15.0</commons.lang3.version>
+    <commons.io.version>2.17.0</commons.io.version>
     <commons.fileupload.version>1.5</commons.fileupload.version>
-    <commons.compress.version>1.21</commons.compress.version>
-    <commons.crypto.version>1.1.0</commons.crypto.version>
-    <commons.email.version>1.5</commons.email.version>
-    <commons.net.version>3.9.0</commons.net.version>
-    <commons.beanutils.version>1.9.4</commons.beanutils.version>
+    <commons.fileupload2.version>2.0.0-M2</commons.fileupload2.version>
+    <commons.compress.version>1.26.2</commons.compress.version>
+    <commons.crypto.version>1.2.0</commons.crypto.version>
+    <commons.email.version>1.6.0</commons.email.version>
+    <commons.net.version>3.11.1</commons.net.version>
+    <commons.beanutils.version>1.11.0</commons.beanutils.version>
 
-    <server.jetty.version>11.0.15</server.jetty.version>
-    <server.undertow.version>2.3.7.Final</server.undertow.version>
-    <server.tomcat.version>9.0.84</server.tomcat.version>
+    <server.jetty.version>12.0.22</server.jetty.version>
+    <server.undertow.version>2.3.18.Final</server.undertow.version>
+    <server.tomcat.version>11.0.7</server.tomcat.version>
 
-    <bouncycastle.version>1.70</bouncycastle.version>
-    <protobuf.version>3.21.12</protobuf.version>
-    <grpc.version>1.53.0</grpc.version>
-    <netty.version>4.1.103.Final</netty.version>
-    <okhttp3.version>4.9.3</okhttp3.version>
-    <okhttp.digest.version>2.1</okhttp.digest.version>
-    <retrofit.version>2.9.0</retrofit.version>
+    <bouncycastle.15.version>1.70</bouncycastle.15.version>
+    <bouncycastle.18.version>1.80</bouncycastle.18.version>
+    <protobuf.version>4.29.5</protobuf.version>
+    <grpc.version>1.70.0</grpc.version>
+    <okhttp3.version>4.12.0</okhttp3.version>
+    <okhttp-digest.old.version>2.1</okhttp-digest.old.version>
+    <okhttp-digest.version>3.1.1</okhttp-digest.version>
+    <retrofit.version>2.11.0</retrofit.version>
     <usb.version>1.3.0</usb.version>
-    <ahc.version>2.12.3</ahc.version>
-    <shiro.version>1.11.0</shiro.version>
-    <druid.version>1.2.9</druid.version>
-    <mybatis.version>3.5.15</mybatis.version>
-    <mybatis-spring.version>2.1.2</mybatis-spring.version>
-    <mybatis-flex.version>1.8.9</mybatis-flex.version>
-    <mybatis-plus.version>3.5.5</mybatis-plus.version>
-    <mybatis-plus-dynamic.version>4.3.0</mybatis-plus-dynamic.version>
-    <mybatis-plus-join.version>1.4.8.1</mybatis-plus-join.version>
-    <mybatis-page-helper.version>5.3.3</mybatis-page-helper.version>
-    <mybatis-page-helper-starter.version>1.4.7</mybatis-page-helper-starter.version>
+    <async-http-client.version>2.12.4</async-http-client.version>
+    <shiro.version>1.13.0</shiro.version>
+    <druid.version>1.2.23</druid.version>
+    <mybatis.version>3.5.19</mybatis.version>
+    <mybatis-spring.version>3.0.4</mybatis-spring.version>
+    <mybatis-flex.version>1.10.9</mybatis-flex.version>
+    <mybatis-plus.version>3.5.9</mybatis-plus.version>
+    <mybatis-plus-dynamic.version>4.3.1</mybatis-plus-dynamic.version>
+    <mybatis-plus-join.version>1.4.13</mybatis-plus-join.version>
+    <mybatis-page-helper.version>6.1.0</mybatis-page-helper.version>
+    <mybatis-page-helper-starter.version>2.1.0</mybatis-page-helper-starter.version>
     <p6spy.version>3.9.1</p6spy.version>
     <user-agent-utils.version>1.21</user-agent-utils.version>
-    <poi.version>5.2.2</poi.version>
-    <xstream.version>1.4.20</xstream.version>
+    <poi.version>5.3.0</poi.version>
     <kxml2.version>2.3.0</kxml2.version>
+    <xstream.version>1.4.21</xstream.version>
     <reflections.version>0.10.2</reflections.version>
-    <javassist.version>3.28.0-GA</javassist.version>
-    <jjwt.version>0.11.5</jjwt.version>
-    <mapstruct.version>1.5.5.Final</mapstruct.version>
+    <javassist.version>3.30.2-GA</javassist.version>
+    <jjwt.version>0.12.6</jjwt.version>
+    <mapstruct.version>1.6.3</mapstruct.version>
     <mapstruct.projectlombok.version>0.2.0</mapstruct.projectlombok.version>
-    <jsoup.version>1.15.4</jsoup.version>
+    <jsoup.version>1.18.3</jsoup.version>
     <springfox.version>3.0.0</springfox.version>
     <!-- 这是最后一个基于1.8jdk版本的 -->
-    <t-io.version>3.7.5.v20211028-RELEASE</t-io.version>
-    <maven.invoker.version>3.2.0</maven.invoker.version>
-    <maven.model.version>3.8.5</maven.model.version>
+    <t-io.version>3.8.6.v20240801-RELEASE</t-io.version>
+    <maven.invoker.version>3.3.0</maven.invoker.version>
+    <maven.model.version>3.9.9</maven.model.version>
   </properties>
 
   <dependencyManagement>
@@ -201,7 +208,7 @@
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-bom</artifactId>
-        <version>${netty.version}</version>
+        <version>${bom.netty}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -282,6 +289,11 @@
         <groupId>commons-fileupload</groupId>
         <artifactId>commons-fileupload</artifactId>
         <version>${commons.fileupload.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-fileupload2-jakarta-servlet6</artifactId>
+        <version>${commons.fileupload2.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -369,15 +381,10 @@
         <artifactId>grpc-stub</artifactId>
         <version>${grpc.version}</version>
       </dependency>
-      <!--      <dependency>-->
-      <!--        <groupId>io.netty</groupId>-->
-      <!--        <artifactId>netty-all</artifactId>-->
-      <!--        <version>${netty.version}</version>-->
-      <!--      </dependency>-->
       <dependency>
         <groupId>org.asynchttpclient</groupId>
         <artifactId>async-http-client</artifactId>
-        <version>${ahc.version}</version>
+        <version>${async-http-client.version}</version>
       </dependency>
       <dependency>
         <groupId>com.squareup.okhttp3</groupId>
@@ -387,7 +394,12 @@
       <dependency>
         <groupId>com.burgstaller</groupId>
         <artifactId>okhttp-digest</artifactId>
-        <version>${okhttp.digest.version}</version>
+        <version>${okhttp-digest.old.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.rburgst</groupId>
+        <artifactId>okhttp-digest</artifactId>
+        <version>${okhttp-digest.version}</version>
       </dependency>
       <dependency>
         <groupId>com.squareup.retrofit2</groupId>
@@ -410,37 +422,72 @@
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk15on</artifactId>
-        <version>${bouncycastle.version}</version>
+        <version>${bouncycastle.15.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk18on</artifactId>
+        <version>${bouncycastle.18.version}</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcutil-jdk15on</artifactId>
-        <version>${bouncycastle.version}</version>
+        <version>${bouncycastle.15.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcutil-jdk18on</artifactId>
+        <version>${bouncycastle.18.version}</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcpkix-jdk15on</artifactId>
-        <version>${bouncycastle.version}</version>
+        <version>${bouncycastle.15.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcpkix-jdk18on</artifactId>
+        <version>${bouncycastle.18.version}</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcmail-jdk15on</artifactId>
-        <version>${bouncycastle.version}</version>
+        <version>${bouncycastle.15.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcmail-jdk18on</artifactId>
+        <version>${bouncycastle.18.version}</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcjmail-jdk15on</artifactId>
-        <version>${bouncycastle.version}</version>
+        <version>${bouncycastle.15.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcjmail-jdk18on</artifactId>
+        <version>${bouncycastle.18.version}</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcpg-jdk15on</artifactId>
-        <version>${bouncycastle.version}</version>
+        <version>${bouncycastle.15.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcpg-jdk18on</artifactId>
+        <version>${bouncycastle.18.version}</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bctls-jdk15on</artifactId>
-        <version>${bouncycastle.version}</version>
+        <version>${bouncycastle.15.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bctls-jdk18on</artifactId>
+        <version>${bouncycastle.18.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
@@ -449,6 +496,11 @@
         <groupId>com.google.code.findbugs</groupId>
         <artifactId>jsr305</artifactId>
         <version>${jsr305.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-annotations</artifactId>
+        <version>${spotbugs-annotations.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
@@ -499,6 +551,11 @@
         <groupId>com.alibaba</groupId>
         <artifactId>fastjson</artifactId>
         <version>${fastjson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba.fastjson2</groupId>
+        <artifactId>fastjson2</artifactId>
+        <version>${fastjson2.version}</version>
       </dependency>
       <dependency>
         <groupId>org.yaml</groupId>
@@ -558,11 +615,21 @@
       <dependency>
         <groupId>net.sf.ehcache</groupId>
         <artifactId>ehcache</artifactId>
+        <version>${ehcache.old.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ehcache</groupId>
+        <artifactId>ehcache</artifactId>
         <version>${ehcache.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
+        <version>${jaxb.api.old.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>jakarta.xml.bind</groupId>
+        <artifactId>jakarta.xml.bind-api</artifactId>
         <version>${jaxb.api.version}</version>
       </dependency>
       <dependency>
@@ -666,6 +733,11 @@
       <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql.old.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.mysql</groupId>
+        <artifactId>mysql-connector-j</artifactId>
         <version>${mysql.version}</version>
       </dependency>
       <dependency>
