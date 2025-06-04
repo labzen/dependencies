@@ -6,7 +6,7 @@
   <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
-  <version>1.10.1</version>
+  <version>1.10.2</version>
   <name>Labzen.Dependencies</name>
   <description>Labzen Dependencies</description>
   <url>https://github.com/labzen/dependencies</url>
@@ -41,7 +41,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <kotlin.version>1.9.10</kotlin.version>
+    <kotlin.version>1.9.25</kotlin.version>
 
     <!--IO.Platform将会进入EOL，使用spring-boot-dependencies作为最新的BOM引入-->
     <!--Nov 23, 2023-->
