@@ -142,6 +142,9 @@
     <springfox.version>3.0.0</springfox.version>
     <!-- 这是最后一个基于1.8jdk版本的 -->
     <t-io.version>3.8.6.v20240801-RELEASE</t-io.version>
+    <freemarker.version>2.3.34</freemarker.version>
+    <velocity.version>2.4.1</velocity.version>
+    <velocity-tools.version>3.1</velocity-tools.version>
     <maven.invoker.version>3.3.0</maven.invoker.version>
     <maven.model.version>3.9.9</maven.model.version>
   </properties>
@@ -726,6 +729,26 @@
         <groupId>org.t-io</groupId>
         <artifactId>tio-websocket-server</artifactId>
         <version>${t-io.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.freemarker</groupId>
+        <artifactId>freemarker</artifactId>
+        <version>${freemarker.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-freemarker</artifactId>
+        <version>${bom.spring.boot}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.velocity</groupId>
+        <artifactId>velocity-engine-core</artifactId>
+        <version>${velocity.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.velocity.tools</groupId>
+        <artifactId>velocity-tools-generic</artifactId>
+        <version>${velocity-tools.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
