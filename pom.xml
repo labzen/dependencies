@@ -6,7 +6,7 @@
   <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
-  <version>1.10.2</version>
+  <version>1.10.3</version>
   <name>Labzen.Dependencies</name>
   <description>Labzen Dependencies</description>
   <url>https://github.com/labzen/dependencies</url>
@@ -74,7 +74,7 @@
     <jackson.version>2.18.4</jackson.version>
     <fastjson.version>2.0.53</fastjson.version>
     <fastjson2.version>2.0.53</fastjson2.version>
-    <snakeyaml.version>2.0.53</snakeyaml.version>
+    <snakeyaml.version>2.3</snakeyaml.version>
     <lombok.version>1.18.34</lombok.version>
     <cglib.version>3.3.0</cglib.version>
     <jna.version>5.16.0</jna.version>
@@ -113,7 +113,6 @@
     <protobuf.version>4.29.5</protobuf.version>
     <grpc.version>1.70.0</grpc.version>
     <okhttp3.version>4.12.0</okhttp3.version>
-    <okhttp-digest.old.version>2.1</okhttp-digest.old.version>
     <okhttp-digest.version>3.1.1</okhttp-digest.version>
     <retrofit.version>2.11.0</retrofit.version>
     <usb.version>1.3.0</usb.version>
@@ -393,11 +392,6 @@
         <groupId>com.squareup.okhttp3</groupId>
         <artifactId>okhttp</artifactId>
         <version>${okhttp3.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.burgstaller</groupId>
-        <artifactId>okhttp-digest</artifactId>
-        <version>${okhttp-digest.old.version}</version>
       </dependency>
       <dependency>
         <groupId>io.github.rburgst</groupId>
