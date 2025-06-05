@@ -148,6 +148,10 @@
     <velocity.version>2.4.1</velocity.version>
     <velocity-tools.version>3.1</velocity-tools.version>
     <compile-testing.version>0.18</compile-testing.version>
+
+    <hamcrest.version>3.0</hamcrest.version>
+    <mockito.version>5.18.0</mockito.version>
+    <jmh.version>1.37</jmh.version>
     <maven.invoker.version>3.3.0</maven.invoker.version>
     <maven.model.version>3.9.9</maven.model.version>
   </properties>
@@ -928,6 +932,24 @@
         <groupId>ch.qos.reload4j</groupId>
         <artifactId>reload4j</artifactId>
         <version>${reload4j.version}</version>
+      </dependency>
+      <!--//////////////////////////////////////////////////////////////////-->
+
+      <!-- about test -->
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest</artifactId>
+        <version>${hamcrest.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>${mockito.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-generator-annprocess</artifactId>
+        <version>${jmh.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
