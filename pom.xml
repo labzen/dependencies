@@ -6,7 +6,7 @@
   <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
-  <version>1.10.3</version>
+  <version>1.10.4</version>
   <name>Labzen.Dependencies</name>
   <description>Labzen Dependencies</description>
   <url>https://github.com/labzen/dependencies</url>
@@ -62,6 +62,7 @@
     <bom.spring.vault>2.3.1</bom.spring.vault>
     <bom.netty>4.1.121.Final</bom.netty>
     <bom.activiti>7.1.0-M16</bom.activiti>
+    <bom.junit-jupiter>5.13.0</bom.junit-jupiter>
 
     <spring.shell.version>2.1.15</spring.shell.version>
     <slf4j.version>2.0.17</slf4j.version>
@@ -104,9 +105,9 @@
     <commons.net.version>3.11.1</commons.net.version>
     <commons.beanutils.version>1.11.0</commons.beanutils.version>
 
-    <server.jetty.version>12.0.22</server.jetty.version>
-    <server.undertow.version>2.3.18.Final</server.undertow.version>
-    <server.tomcat.version>11.0.7</server.tomcat.version>
+    <server.jetty.version>10.0.25</server.jetty.version>
+    <server.undertow.version>2.2.37.Final</server.undertow.version>
+    <server.tomcat.version>9.0.105</server.tomcat.version>
 
     <bouncycastle.15.version>1.70</bouncycastle.15.version>
     <bouncycastle.18.version>1.80</bouncycastle.18.version>
@@ -129,11 +130,13 @@
     <mybatis-page-helper-starter.version>2.1.0</mybatis-page-helper-starter.version>
     <p6spy.version>3.9.1</p6spy.version>
     <user-agent-utils.version>1.21</user-agent-utils.version>
+    <yauaa.version>7.31.0</yauaa.version>
     <poi.version>5.3.0</poi.version>
     <kxml2.version>2.3.0</kxml2.version>
     <xstream.version>1.4.21</xstream.version>
     <reflections.version>0.10.2</reflections.version>
     <javassist.version>3.30.2-GA</javassist.version>
+    <javapoet.version>0.7.0</javapoet.version>
     <jjwt.version>0.12.6</jjwt.version>
     <mapstruct.version>1.6.3</mapstruct.version>
     <mapstruct.projectlombok.version>0.2.0</mapstruct.projectlombok.version>
@@ -144,6 +147,7 @@
     <freemarker.version>2.3.34</freemarker.version>
     <velocity.version>2.4.1</velocity.version>
     <velocity-tools.version>3.1</velocity-tools.version>
+    <compile-testing.version>0.18</compile-testing.version>
     <maven.invoker.version>3.3.0</maven.invoker.version>
     <maven.model.version>3.9.9</maven.model.version>
   </properties>
@@ -222,6 +226,14 @@
         <version>${bom.activiti}</version>
         <scope>import</scope>
         <type>pom</type>
+      </dependency>
+      <!-- JUnit5 Bom Import -->
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${bom.junit-jupiter}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
@@ -640,6 +652,11 @@
         <version>${user-agent-utils.version}</version>
       </dependency>
       <dependency>
+        <groupId>nl.basjes.parse.useragent</groupId>
+        <artifactId>yauaa</artifactId>
+        <version>${yauaa.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi</artifactId>
         <version>${poi.version}</version>
@@ -668,6 +685,11 @@
         <groupId>org.javassist</groupId>
         <artifactId>javassist</artifactId>
         <version>${javassist.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.palantir.javapoet</groupId>
+        <artifactId>javapoet</artifactId>
+        <version>${javapoet.version}</version>
       </dependency>
       <dependency>
         <groupId>io.jsonwebtoken</groupId>
@@ -743,6 +765,11 @@
         <groupId>org.apache.velocity.tools</groupId>
         <artifactId>velocity-tools-generic</artifactId>
         <version>${velocity-tools.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.testing.compile</groupId>
+        <artifactId>compile-testing</artifactId>
+        <version>${compile-testing.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
