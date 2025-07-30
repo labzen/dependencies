@@ -6,7 +6,7 @@
   <groupId>cn.labzen</groupId>
   <artifactId>dependencies</artifactId>
   <packaging>pom</packaging>
-  <version>1.10.4</version>
+  <version>1.10.7-SNAPSHOT</version>
   <name>Labzen.Dependencies</name>
   <description>Labzen Dependencies</description>
   <url>https://github.com/labzen/dependencies</url>
@@ -62,7 +62,6 @@
     <bom.spring.vault>2.3.1</bom.spring.vault>
     <bom.netty>4.1.121.Final</bom.netty>
     <bom.activiti>7.1.0-M16</bom.activiti>
-    <bom.junit-jupiter>5.13.0</bom.junit-jupiter>
 
     <spring.shell.version>2.1.15</spring.shell.version>
     <slf4j.version>2.0.17</slf4j.version>
@@ -121,9 +120,9 @@
     <shiro.version>1.13.0</shiro.version>
     <druid.version>1.2.23</druid.version>
     <mybatis.version>3.5.19</mybatis.version>
-    <mybatis-spring.version>3.0.4</mybatis-spring.version>
+    <mybatis-spring.version>2.1.2</mybatis-spring.version>
     <mybatis-flex.version>1.10.9</mybatis-flex.version>
-    <mybatis-plus.version>3.5.9</mybatis-plus.version>
+    <mybatis-plus.version>3.5.3.2</mybatis-plus.version>
     <mybatis-plus-dynamic.version>4.3.1</mybatis-plus-dynamic.version>
     <mybatis-plus-join.version>1.4.13</mybatis-plus-join.version>
     <mybatis-page-helper.version>6.1.0</mybatis-page-helper.version>
@@ -136,7 +135,10 @@
     <xstream.version>1.4.21</xstream.version>
     <reflections.version>0.10.2</reflections.version>
     <javassist.version>3.30.2-GA</javassist.version>
-    <javapoet.version>0.7.0</javapoet.version>
+    <!-- 兼容JDK8/11 -->
+    <javapoet8.version>1.13.0</javapoet8.version>
+    <!-- 基于JDK17编译的 -->
+    <javapoet17.version>0.7.0</javapoet17.version>
     <jjwt.version>0.12.6</jjwt.version>
     <mapstruct.version>1.6.3</mapstruct.version>
     <mapstruct.projectlombok.version>0.2.0</mapstruct.projectlombok.version>
@@ -149,6 +151,8 @@
     <velocity-tools.version>3.1</velocity-tools.version>
     <compile-testing.version>0.18</compile-testing.version>
 
+    <junit-jupiter.version>5.13.0</junit-jupiter.version>
+    <junit-platform.version>1.13.0</junit-platform.version>
     <hamcrest.version>3.0</hamcrest.version>
     <mockito.version>5.18.0</mockito.version>
     <jmh.version>1.37</jmh.version>
@@ -230,14 +234,6 @@
         <version>${bom.activiti}</version>
         <scope>import</scope>
         <type>pom</type>
-      </dependency>
-      <!-- JUnit5 Bom Import -->
-      <dependency>
-        <groupId>org.junit</groupId>
-        <artifactId>junit-bom</artifactId>
-        <version>${bom.junit-jupiter}</version>
-        <type>pom</type>
-        <scope>import</scope>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
@@ -691,9 +687,14 @@
         <version>${javassist.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.squareup</groupId>
+        <artifactId>javapoet</artifactId>
+        <version>${javapoet8.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.palantir.javapoet</groupId>
         <artifactId>javapoet</artifactId>
-        <version>${javapoet.version}</version>
+        <version>${javapoet17.version}</version>
       </dependency>
       <dependency>
         <groupId>io.jsonwebtoken</groupId>
@@ -855,6 +856,11 @@
       </dependency>
       <dependency>
         <groupId>com.mybatis-flex</groupId>
+        <artifactId>mybatis-flex-spring</artifactId>
+        <version>${mybatis-flex.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.mybatis-flex</groupId>
         <artifactId>mybatis-flex-spring-boot-starter</artifactId>
         <version>${mybatis-flex.version}</version>
       </dependency>
@@ -936,6 +942,41 @@
       <!--//////////////////////////////////////////////////////////////////-->
 
       <!-- about test -->
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>${junit-jupiter.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>${junit-jupiter.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>${junit-jupiter.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-params</artifactId>
+        <version>${junit-jupiter.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-commons</artifactId>
+        <version>${junit-platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-engine</artifactId>
+        <version>${junit-platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-launcher</artifactId>
+        <version>${junit-platform.version}</version>
+      </dependency>
       <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest</artifactId>
@@ -1031,5 +1072,18 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>snapshot-deploy</id>
+
+      <distributionManagement>
+        <snapshotRepository>
+          <id>central</id>
+          <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+      </distributionManagement>
+    </profile>
+  </profiles>
 
 </project>
