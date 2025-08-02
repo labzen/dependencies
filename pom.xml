@@ -162,6 +162,14 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- Kotlin Bom Import -->
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-bom</artifactId>
+        <version>${kotlin.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <!-- Spring Boot IO Platform Bom Import -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -234,34 +242,6 @@
         <version>${bom.activiti}</version>
         <scope>import</scope>
         <type>pom</type>
-      </dependency>
-      <!--//////////////////////////////////////////////////////////////////-->
-
-      <!-- about kotlin lang -->
-      <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-reflect</artifactId>
-        <version>${kotlin.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-stdlib</artifactId>
-        <version>${kotlin.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-stdlib-common</artifactId>
-        <version>${kotlin.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-stdlib-jdk8</artifactId>
-        <version>${kotlin.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-stdlib-jdk7</artifactId>
-        <version>${kotlin.version}</version>
       </dependency>
       <!--//////////////////////////////////////////////////////////////////-->
 
